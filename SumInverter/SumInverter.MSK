@@ -1,4 +1,4 @@
-VERSION 24/10/2017 23:18:10
+VERSION 24/10/2017 23:19:59
 FIG #D:\INGEGNERIA\Microelectronics\Microwind4Cav\SumInverter\SumInverter.MSK
 BB(97,31,145,93)
 SIMU #5.00
@@ -63,4 +63,14 @@ REC(137,39,2,16,DN)
 REC(132,39,2,16,DN)
 REC(124,39,2,16,DN)
 REC(119,39,2,16,DN)
+TITLE 100 65  #notSum
+$v 1000 0 
+TITLE 141 34  #Vss
+$0 1000 0 
+TITLE 113 89  #Vdd
+$1 1000 0 
+TITLE 129 37  #phi
+$v 1000 0 
+TITLE 129 61  #sum
+$v 1000 0 
 FFIG D:\INGEGNERIA\Microelectronics\Microwind4Cav\SumInverter\SumInverter.MSK
