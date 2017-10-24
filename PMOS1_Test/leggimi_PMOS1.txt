@@ -1,0 +1,2 @@
+Qui abbiamo provato il solo PMOS della "Sum" output.
+Abbiamo fatto simulazioni per ottenere le curve caratteristiche (DC Sweep), con il modello accurato fornito da uWind e una versione semplificata (qui non salvata).
