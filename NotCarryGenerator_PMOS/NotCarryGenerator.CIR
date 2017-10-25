@@ -1,0 +1,65 @@
+CIRCUIT D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator\NotCarryGenerator.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+*
+* List of nodes
+* "notCarry" corresponds to n°3
+* "N4" corresponds to n°4
+* "N5" corresponds to n°5
+* "N6" corresponds to n°6
+* "N7" corresponds to n°7
+* "N8" corresponds to n°8
+* "b" corresponds to n°9
+* "c" corresponds to n°10
+* "a" corresponds to n°11
+*
+*
+* Generators for a b c
+Va 11 0 PULSE(0 1.2 0 10p 10p 500p 1n)
+Vb 9 0 PULSE(0 1.2 0 10p 10p 1n 2n)
+Vc 10 0 PULSE(0 1.2 0 10p 10p 2n 4n)
+*
+* Resistor for the n-part
+Rn 3 0 10k
+Cout 3 0 2fF
+*
+* MOS devices
+MP1 1 9 8 1 P1  W= 1.44U L= 0.12U
+MP2 1 11 7 1 P1  W= 1.44U L= 0.12U
+MP3 8 10 3 1 P1  W= 1.44U L= 0.12U
+MP4 7 10 3 1 P1  W= 1.44U L= 0.12U
+MP5 3 10 6 1 P1  W= 1.44U L= 0.12U
+MP6 3 10 5 1 P1  W= 1.44U L= 0.12U
+MP7 6 9 1 1 P1  W= 1.44U L= 0.12U
+MP8 5 11 1 1 P1  W= 1.44U L= 0.12U
+MP9 1 11 4 1 P1  W= 3.48U L= 0.12U
+MP10 4 9 3 1 P1  W= 3.48U L= 0.12U
+*
+C2 1 0  7.140fF
+C3 3 0  1.806fF
+C4 4 0  0.554fF
+C5 5 0  0.240fF
+C6 6 0  0.240fF
+C7 7 0  0.240fF
+C8 8 0  0.240fF
+C9 9 0  0.478fF
+C10 10 0  0.386fF
+C11 11 0  0.464fF
+*
+*
+* p-MOS Model 3:
+* low leakage
+.MODEL P1 PMOS LEVEL=3 VTO=-0.45 UO=200.000 TOX= 2.0E-9
++LD =0.000U THETA=0.300 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=110.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+.TEMP 27.0
+.TRAN 0.30PS 5.00N
+.PROBE
+.END
