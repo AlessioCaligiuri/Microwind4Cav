@@ -1,0 +1,30 @@
+Circuit: CIRCUIT D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator\NotCarryGenerator.MSK
+
+Model "p1": Oxide thickness thinner than recommended for a level 3 MOSFET.
+WARNING: Node 7 is floating.
+WARNING: Node 5 is floating.
+WARNING: Node 6 is floating.
+
+Instance "mp3": Length shorter than recommended for a level 3 MOSFET.
+Instance "mp2": Length shorter than recommended for a level 3 MOSFET.
+Instance "mp1": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Oct 25 16:11:08 2017
+Total elapsed time: 0.140 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2088
+traniter = 2084
+tranpoints = 1042
+accept = 1042
+rejected = 0
+matrix size = 7
+fillins = 4
+solver = Normal
+Matrix Compiler1: 562 bytes object code size  0.3/0.3/[0.2]
+Matrix Compiler2:      53 opcodes  0.3/[0.2]/0.7
+
+

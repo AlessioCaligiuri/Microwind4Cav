@@ -1,0 +1,40 @@
+CIRCUIT D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator\NotCarryGenerator.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+*
+* List of nodes
+* "notCarry" corresponds to n°3
+* "N4" corresponds to n°4
+* "a" corresponds to n°5
+* "b" corresponds to n°6
+* "c" corresponds to n°7
+*
+* MOS devices
+MP1 1 7 3 1 P1  W= 6.24U L= 0.12U
+MP2 1 5 4 1 P1  W= 3.12U L= 0.12U
+MP3 4 6 3 1 P1  W= 3.12U L= 0.12U
+*
+C2 1 0  8.137fF
+C3 3 0  1.717fF
+C4 4 0  0.498fF
+C5 5 0  0.429fF
+C6 6 0  0.444fF
+C7 7 0  0.351fF
+*
+*
+* p-MOS Model 3:
+* low leakage
+.MODEL P1 PMOS LEVEL=3 VTO=-0.45 UO=200.000 TOX= 2.0E-9
++LD =0.000U THETA=0.300 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=110.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+.TEMP 27.0
+.TRAN 0.30PS 5.00N
+.PROBE
+.END
