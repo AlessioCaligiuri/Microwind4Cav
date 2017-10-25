@@ -1,0 +1,39 @@
+VERSION 25/10/2017 16:00:27
+FIG #D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator\NotCarryGenerator.MSK
+BB(-20,-6,45,64)
+SIMU #5.00
+REC(-20,-6,65,70,NW)
+REC(-10,3,43,52,DP)
+REC(-10,51,4,4,DP)
+REC(-9,52,2,2,CO)
+REC(8,0,2,58,PO)
+REC(13,0,2,27,PO)
+REC(13,31,2,27,PO)
+REC(26,0,2,58,PO)
+REC(21,0,2,58,PO)
+REC(2,56,6,2,PO)
+REC(-5,31,2,27,PO)
+REC(13,58,2,3,PO)
+REC(-5,61,20,2,PO)
+REC(-5,58,2,3,PO)
+REC(13,-3,2,3,PO)
+REC(-5,-3,2,3,PO)
+REC(-5,-5,20,2,PO)
+REC(26,-3,2,3,PO)
+REC(15,-5,13,2,PO)
+REC(21,58,2,3,PO)
+REC(15,61,8,2,PO)
+REC(-5,0,2,27,PO)
+REC(0,0,2,58,PO)
+REC(-10,3,4,52,ME)
+REC(29,3,4,52,ME)
+REC(3,3,4,52,ME)
+REC(16,3,4,52,ME)
+REC(-10,51,4,4,ME)
+TITLE 5 62  #a
+$v 1000 0 
+TITLE 5 57  #c
+$v 1000 0 
+TITLE 5 -4  #b
+$v 1000 0 
+FFIG D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator\NotCarryGenerator.MSK
