@@ -1,0 +1,4 @@
+Questo circuito genera il not carry (stadio 1) solo per la parte NMOS.
+Nel file "ForSim" è stata aggiunta una resistenza da 5K (per sostiuire la parte PMOS, assente) e un Cout da 2fF (che si somma ad uno parassita già presente).
+Ci sono inoltre i generatori di prova per Va Vb e Vc.
+La simulazione dà risultati qualitativamente corretti.
