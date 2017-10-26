@@ -1,0 +1,4 @@
+Abbiamo unito le due parti NMOS e PMOS per la generazione di !CARRY.
+E' V2 perché abbiamo utilizzato le versioni "ottimizzate" delle due parti N e P.
+Abbiamo simulato e funziona. Abbiamo confrontato la simulazione con la V1 e sono identiche.
+Abbiamo preparato le metal per il trasporto dei segnali A B C !CARRY e phi.

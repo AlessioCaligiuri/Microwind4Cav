@@ -1,0 +1,90 @@
+CIRCUIT D:\INGEGNERIA\Microelectronics\Microwind4Cav\NotCarryGenerator_V2\NotCarryGenerator_V2.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+*
+* List of nodes
+* "N3" corresponds to n°3
+* "notCarry" corresponds to n°4
+* "N5" corresponds to n°5
+* "N6" corresponds to n°6
+* "N8" corresponds to n°8
+* "N9" corresponds to n°9
+* "a" corresponds to n°16
+* "c" corresponds to n°17
+* "b" corresponds to n°18
+* "phi" corresponds to n°19
+*
+* Generators for a b c
+Va 16 0 PULSE(0 1.2 0 10p 10p 500p 1n)
+Vb 18 0 PULSE(0 1.2 0 10p 10p 1n 2n)
+Vc 17 0 PULSE(0 1.2 0 10p 10p 2n 4n)
+*
+* Output capacitor
+Cout 4 0 2fF
+*
+* MOS devices
+MN1 11 18 0 0 N1  W= 1.56U L= 0.12U
+MN2 4 16 11 0 N1  W= 1.56U L= 0.12U
+MN3 12 16 4 0 N1  W= 0.48U L= 0.12U
+MN4 13 18 4 0 N1  W= 0.48U L= 0.12U
+MN5 0 17 12 0 N1  W= 0.48U L= 0.12U
+MN6 0 17 13 0 N1  W= 0.48U L= 0.12U
+MN7 14 17 0 0 N1  W= 0.48U L= 0.12U
+MN8 15 17 0 0 N1  W= 0.48U L= 0.12U
+MN9 4 16 14 0 N1  W= 0.48U L= 0.12U
+MN10 4 18 15 0 N1  W= 0.48U L= 0.12U
+MP1 3 18 1 1 P1  W= 1.44U L= 0.12U
+MP2 4 16 3 1 P1  W= 1.44U L= 0.12U
+MP3 5 16 4 1 P1  W= 1.44U L= 0.12U
+MP4 1 18 5 1 P1  W= 1.44U L= 0.12U
+MP5 6 18 1 1 P1  W= 1.44U L= 0.12U
+MP6 4 17 6 1 P1  W= 1.44U L= 0.12U
+MP7 8 17 4 1 P1  W= 1.44U L= 0.12U
+MP8 1 18 8 1 P1  W= 1.44U L= 0.12U
+MP9 9 16 1 1 P1  W= 1.44U L= 0.12U
+MP10 4 17 9 1 P1  W= 1.44U L= 0.12U
+MP11 1 16 10 1 P1  W= 1.44U L= 0.12U
+MP12 10 17 4 1 P1  W= 1.44U L= 0.12U
+*
+C2 1 0  6.072fF
+C3 3 0  0.240fF
+C4 4 0  2.566fF
+C5 5 0  0.240fF
+C6 6 0  0.240fF
+C8 8 0  0.240fF
+C9 9 0  0.240fF
+C10 10 0  0.240fF
+C11 11 0  0.272fF
+C12 12 0  0.096fF
+C13 13 0  0.096fF
+C14 14 0  0.096fF
+C15 15 0  0.096fF
+C16 16 0  1.061fF
+C17 17 0  1.093fF
+C18 18 0  1.181fF
+C19 19 0  0.014fF
+*
+* n-MOS Model 3 :
+* low leakage
+.MODEL N1 NMOS LEVEL=3 VTO=0.40 UO=600.000 TOX= 2.0E-9
++LD =0.000U THETA=0.500 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=120.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* p-MOS Model 3:
+* low leakage
+.MODEL P1 PMOS LEVEL=3 VTO=-0.45 UO=200.000 TOX= 2.0E-9
++LD =0.000U THETA=0.300 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=110.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+.TEMP 27.0
+.tran 0 10n 0 1p
+.PROBE
+.END
