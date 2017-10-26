@@ -1,0 +1,5 @@
+## Ignore LTSpice simulation output files.
+
+# User-specific files
+*.log
+*.raw
