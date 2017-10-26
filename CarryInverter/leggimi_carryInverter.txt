@@ -1,0 +1,4 @@
+Inverter finale per il carry, con i due mos grossi realizzati in modo furbo.
+Il PMOS è diviso in tre rami, i due NMOS sono divisi in due rami e hanno doppio gate.
+La maschera è ricavata direttamente da quella del sum, stirando gli NMOS (da 16lambda a 20lambda).
+La simulazione dà esito positivo.
