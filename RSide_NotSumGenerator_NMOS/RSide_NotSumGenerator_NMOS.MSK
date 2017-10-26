@@ -1,0 +1,42 @@
+VERSION 26/10/2017 15:43:05
+FIG #C:\Users\emanu\Documents\A_UNIVERSITA\A_MAGISTRALE\Microwind4Cav\RightSide_NotSumGenerator_NMOS\RightSide_NotSumGenerator_NMOS.M
+BB(-20,9,7,54)
+SIMU #5.00
+REC(3,11,4,4,DP)
+REC(2,19,5,32,DN)
+REC(-3,19,3,32,DN)
+REC(-8,19,3,32,DN)
+REC(-13,19,3,32,DN)
+REC(-20,19,5,32,DN)
+REC(0,19,2,32,DN)
+REC(-5,19,2,32,DN)
+REC(-10,19,2,32,DN)
+REC(-15,19,2,32,DN)
+REC(-19,20,2,2,CO)
+REC(-19,29,2,2,CO)
+REC(4,40,2,2,CO)
+REC(-19,48,2,2,CO)
+REC(4,29,2,2,CO)
+REC(4,48,2,2,CO)
+REC(4,12,2,2,CO)
+REC(4,20,2,2,CO)
+REC(-19,40,2,2,CO)
+REC(-10,16,2,38,PO)
+REC(-15,16,2,38,PO)
+REC(0,16,2,38,PO)
+REC(-5,16,2,38,PO)
+REC(3,9,4,42,ME)
+REC(-20,19,4,32,ME)
+TITLE -14 18  #a
+$v 1000 0 
+TITLE -9 18  #b
+$v 1000 0 
+TITLE -4 18  #c
+$v 1000 0 
+TITLE 1 18  #phi
+$v 1000 0 
+TITLE -18 25  #notSum
+$v 1000 0 
+TITLE 5 10  #Vss
+$0 1000 0 
+FFIG C:\Users\emanu\Documents\A_UNIVERSITA\A_MAGISTRALE\Microwind4Cav\RightSide_NotSumGenerator_NMOS\RightSide_NotSumGenerator_NMOS.M
