@@ -1,0 +1,3 @@
+Questo circuito genera il not carry (stadio 1) solo per la parte PMOS.
+Nel file "ForSim" è stata aggiunta una resistenza da 5K (per sostiuire la parte NMOS, assente) e un Cout da 2fF (che si somma ad uno parassita già presente).
+In questa versione V2 abbiamo ridotto l'altezza a scapito della larghezza, "ripiegando" i mos. Abbiamo inoltre aggiunto del metal2 per i collegamenti A, B, C.
