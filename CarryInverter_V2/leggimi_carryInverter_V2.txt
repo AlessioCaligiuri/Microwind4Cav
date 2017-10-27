@@ -1,0 +1,3 @@
+Inverter finale per il carry, con i due mos grossi realizzati in modo furbo.
+Il PMOS è diviso in tre rami, i due NMOS sono divisi in due rami e hanno doppio gate. Questa V2 risolve il collegamento con i "bus" al centro del layout per i segnali A, B, C, !CARRY, phi.
+Va ancora portato fuori il Carry.
