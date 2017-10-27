@@ -1,4 +1,4 @@
-CIRCUIT D:\INGEGNERIA\Microelectronics\Microwind4Cav\TSPC_FA_FullDesign\TSPC_FA_FullDesign.MSK
+CIRCUIT C:\Users\emanu\Documents\A_UNIVERSITA\A_MAGISTRALE\Microwind4Cav\TSPC_FA_FullDesign\TSPC_FA_FullDesign.MSK
 *
 * IC Technology: CMOS 0.12µm - 6 Metal
 *
@@ -22,9 +22,11 @@ VDD 1 0 DC 1.20
 Va 32 0 PULSE(0 1.2 0 10p 10p 500p 1n)
 Vb 29 0 PULSE(0 1.2 0 10p 10p 1n 2n)
 Vc 31 0 PULSE(0 1.2 0 10p 10p 2n 4n)
-Vphi 30 0 PULSE(0 1.2 0 10p 10p 250p 500p)
 *
-* Output capacitor
+* Generators for phi, notCarry
+Vphi 		30 0 PULSE(0 1.2 0 10p 10p 250p 500p)
+*
+* Output capacitor 
 CoutSum 3 0 100fF
 CoutCarry 6 0 100fF
 *
@@ -122,6 +124,6 @@ C32 32 0  1.672fF
 * Transient analysis
 *
 .TEMP 27.0
-.TRAN 0.30PS 5.00N
+.tran 0 16n 0 1p
 .PROBE
 .END
