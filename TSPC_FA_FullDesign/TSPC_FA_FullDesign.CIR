@@ -1,0 +1,117 @@
+CIRCUIT C:\Users\emanu\Documents\A_UNIVERSITA\A_MAGISTRALE\Microwind4Cav\TSPC_FA_FullDesign\TSPC_FA_FullDesign.MSK
+*
+* IC Technology: CMOS 0.12µm - 6 Metal
+*
+VDD 1 0 DC 1.20
+*
+* List of nodes
+* "sum" corresponds to n°2
+* "N5" corresponds to n°5
+* "carry" corresponds to n°6
+* "N7" corresponds to n°7
+* "notCarry" corresponds to n°8
+* "N9" corresponds to n°9
+* "notSum" corresponds to n°16
+* "d" corresponds to n°20
+* "b" corresponds to n°29
+* "phi" corresponds to n°30
+* "c" corresponds to n°31
+* "a" corresponds to n°32
+*
+* MOS devices
+MN1 0 32 19 0 N1  W= 1.92U L= 0.12U
+MN2 19 29 18 0 N1  W= 1.92U L= 0.12U
+MN3 18 31 17 0 N1  W= 1.92U L= 0.12U
+MN4 17 30 16 0 N1  W= 1.92U L= 0.12U
+MN5 0 16 15 0 N1  W= 0.96U L= 0.12U
+MN6 15 30 2 0 N1  W= 0.96U L= 0.12U
+MN7 2 30 14 0 N1  W= 0.96U L= 0.12U
+MN8 14 16 0 0 N1  W= 0.96U L= 0.12U
+MN9 20 32 16 0 N1  W= 1.20U L= 0.12U
+MN10 16 29 20 0 N1  W= 1.20U L= 0.12U
+MN11 20 31 16 0 N1  W= 1.20U L= 0.12U
+MN12 21 8 20 0 N1  W= 1.20U L= 0.12U
+MN13 0 30 21 0 N1  W= 1.20U L= 0.12U
+MN14 22 8 0 0 N1  W= 1.20U L= 0.12U
+MN15 6 30 22 0 N1  W= 1.20U L= 0.12U
+MN16 23 30 6 0 N1  W= 1.20U L= 0.12U
+MN17 0 8 23 0 N1  W= 1.20U L= 0.12U
+MN18 24 29 0 0 N1  W= 1.56U L= 0.12U
+MN19 8 32 24 0 N1  W= 1.56U L= 0.12U
+MN20 25 32 8 0 N1  W= 0.48U L= 0.12U
+MN21 26 29 8 0 N1  W= 0.48U L= 0.12U
+MN22 0 31 25 0 N1  W= 0.48U L= 0.12U
+MN23 0 31 26 0 N1  W= 0.48U L= 0.12U
+MN24 27 31 0 0 N1  W= 0.48U L= 0.12U
+MN25 28 31 0 0 N1  W= 0.48U L= 0.12U
+MN26 8 32 27 0 N1  W= 0.48U L= 0.12U
+MN27 8 29 28 0 N1  W= 0.48U L= 0.12U
+MP1 1 16 2 0 P1  W= 3.60U L= 0.12U
+MP2 1 30 5 0 P1  W= 1.20U L= 0.12U
+MP3 1 8 6 0 P1  W= 3.60U L= 0.12U
+MP4 7 29 1 0 P1  W= 1.44U L= 0.12U
+MP5 8 32 7 0 P1  W= 1.44U L= 0.12U
+MP6 9 32 8 0 P1  W= 1.44U L= 0.12U
+MP7 1 29 9 0 P1  W= 1.44U L= 0.12U
+MP8 10 29 1 0 P1  W= 1.44U L= 0.12U
+MP9 8 31 10 0 P1  W= 1.44U L= 0.12U
+MP10 11 31 8 0 P1  W= 1.44U L= 0.12U
+MP11 1 29 11 0 P1  W= 1.44U L= 0.12U
+MP12 12 32 1 0 P1  W= 1.44U L= 0.12U
+MP13 8 31 12 0 P1  W= 1.44U L= 0.12U
+MP14 13 31 8 0 P1  W= 1.44U L= 0.12U
+MP15 1 32 13 0 P1  W= 1.44U L= 0.12U
+*
+C2 2 0  1.153fF
+C4 1 0  4.524fF
+C5 5 0  0.310fF
+C6 6 0  1.278fF
+C7 7 0  0.240fF
+C8 8 0  3.348fF
+C9 9 0  0.240fF
+C10 10 0  0.240fF
+C11 11 0  0.240fF
+C12 12 0  0.240fF
+C13 13 0  0.240fF
+C14 14 0  0.174fF
+C15 15 0  0.174fF
+C16 16 0  2.257fF
+C17 17 0  0.424fF
+C18 18 0  0.331fF
+C19 19 0  0.331fF
+C20 20 0  0.781fF
+C21 21 0  0.214fF
+C22 22 0  0.214fF
+C23 23 0  0.214fF
+C24 24 0  0.272fF
+C25 25 0  0.096fF
+C26 26 0  0.096fF
+C27 27 0  0.096fF
+C28 28 0  0.096fF
+C29 29 0  1.734fF
+C30 30 0  1.440fF
+C31 31 0  1.603fF
+C32 32 0  1.672fF
+*
+* n-MOS Model 3 :
+* low leakage
+.MODEL N1 NMOS LEVEL=3 VTO=0.40 UO=600.000 TOX= 2.0E-9
++LD =0.000U THETA=0.500 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=120.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* p-MOS Model 3:
+* low leakage
+.MODEL P1 PMOS LEVEL=3 VTO=-0.45 UO=200.000 TOX= 2.0E-9
++LD =0.000U THETA=0.300 GAMMA=0.400
++PHI=0.200 KAPPA=0.060 VMAX=110.00K
++CGSO=100.0p CGDO=100.0p
++CGBO= 60.0p CJSW=240.0p
+*
+* Transient analysis
+*
+.TEMP 27.0
+.TRAN 0.30PS 5.00N
+.PROBE
+.END
